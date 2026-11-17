@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout & Delivery — Handmade Gifts</title>
+  <meta name="description" content="Provide delivery address and complete your handmade craft order with Cash on Delivery simulation.">
+
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+  <!-- Google Fonts: Playfair Display & Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar text-center">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="d-none d-md-block text-start">
+        <i class="bi bi-geo-alt me-1"></i> Pan-India Handcrafted Delivery
+      </div>
+      <div class="mx-auto">
+        ✨ <strong>Festive Gifting Offer:</strong> Use code <span class="badge bg-light text-dark fw-bold px-2 py-1">ARTISAN20</span> for 20% off on all gift hampers | Free shipping over ₹999
+      </div>
+      <div class="d-none d-md-block text-end">
+        <a href="contact.html">Artisan Helpdesk</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Bar -->
+  <nav class="navbar navbar-expand-lg custom-navbar sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <span class="brand-icon"><i class="bi bi-gift-fill"></i></span>
+        <div>
+          <div>Handmade Gifts</div>
+          <span class="brand-sub">Crafted With Devotion</span>
+        </div>
+      </a>
+
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="products.html">Products</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Categories
+            </a>
+            <ul class="dropdown-menu border-0 shadow-sm rounded-3 mt-2">
+              <li><a class="dropdown-item py-2" href="products.html?category=Ceramics%20%26%20Pottery"><i class="bi bi-flower1 me-2 text-primary"></i>Ceramics & Pottery</a></li>
+              <li><a class="dropdown-item py-2" href="products.html?category=Candles%20%26%20Fragrance"><i class="bi bi-fire me-2 text-primary"></i>Candles & Fragrance</a></li>
+              <li><a class="dropdown-item py-2" href="products.html?category=Home%20Decor"><i class="bi bi-house-heart me-2 text-primary"></i>Home Decor & Macrame</a></li>
+              <li><a class="dropdown-item py-2" href="products.html?category=Wooden%20Crafts"><i class="bi bi-tree me-2 text-primary"></i>Wooden Crafts & Journals</a></li>
+              <li><a class="dropdown-item py-2" href="products.html?category=Handcrafted%20Jewelry"><i class="bi bi-gem me-2 text-primary"></i>Handcrafted Jewelry</a></li>
+              <li><a class="dropdown-item py-2" href="products.html?category=Bath%20%26%20Body"><i class="bi bi-droplet me-2 text-primary"></i>Organic Bath & Body</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item py-2 fw-semibold text-primary" href="products.html?category=Gift%20Hampers"><i class="bi bi-box2-heart me-2"></i>Curated Gift Hampers</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">About & Heritage</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html#contact-section">Contact Us</a>
+          </li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="login.html" class="nav-icon-btn" title="Account / Sign In">
+            <i class="bi bi-person"></i>
+          </a>
+          <a href="cart.html" class="nav-icon-btn" title="Shopping Cart">
+            <i class="bi bi-bag"></i>
+            <span class="badge-counter cart-badge-count">3</span>
+          </a>
+          <a href="register.html" class="btn btn-outline-terracotta d-none d-md-inline-flex ms-2">
+            Join Guild
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header Breadcrumb Banner -->
+  <section class="py-4" style="background-color: var(--bg-surface-soft); border-bottom: 1px solid var(--border-light);">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb mb-2" style="font-size: 0.85rem;">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="cart.html">Shopping Bag</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Delivery & Checkout</li>
+        </ol>
+      </nav>
+      <div class="d-flex justify-content-between align-items-center">
+        <div>
+          <h1 class="h2 fw-bold mb-0 font-serif">Secure Artisan Checkout</h1>
+          <p class="text-muted mb-0">Simulated delivery booking with Cash on Delivery</p>
+        </div>
+        <div class="d-flex align-items-center gap-2 text-success" style="font-size: 0.9rem;">
+          <i class="bi bi-shield-fill-check fs-4"></i>
+          <span class="fw-semibold d-none d-sm-inline">256-Bit SSL Demo Mode</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Checkout Content -->
+  <main class="py-5">
+    <div class="container">
+      <form id="checkout-form" novalidate>
+        <div class="row g-4">
+          
+          <!-- Left Column: Delivery Form & Payment Choice -->
+          <div class="col-lg-7">
+            
+            <!-- Step 1: Delivery Address Form -->
+            <div class="checkout-section-box">
+              <div class="checkout-step-header">
+                <span class="step-num">1</span>
+                <div>
+                  <h4 class="h5 fw-bold mb-0 font-serif">Delivery Address</h4>
+                  <small class="text-muted">Where should our artisan guild send your parcel?</small>
+                </div>
+              </div>
+
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <label for="billing-first-name" class="form-label fw-semibold text-dark" style="font-size: 0.88rem;">
+                    First Name <span class="text-danger">*</span>
+                  </label>
+                  <input type="text" id="billing-first-name" class="form-control" value="Ananya" placeholder="First Name" required>
+                  <div class="invalid-feedback">First name is required.</div>
+                </div>
+
+                <div class="col-sm-6">
+                  <label for="billing-last-name" class="form-label fw-semibold text-dark" style="font-size: 0.88rem;">
+                    Last Name <span class="text-danger">*</span>
+                  </label>
+                  <input type="text" id="billing-last-name" class="form-control" value="Sharma" placeholder="Last Name" required>
+                  <div class="invalid-feedback">Last name is required.</div>
+                </div>
+
+                <div class="col-sm-6">
+                  <label for="billing-email" class="form-label fw-semibold text-dark" style="font-size: 0.88rem;">
+                    Email Address <span class="text-danger">*</span>
+                  </label>
+                  <input type="email" id="billing-email" class="form-control" value="ananya.sharma@example.com" placeholder="For tracking updates" required>
+                  <div class="invalid-feedback">Valid email required for confirmation.</div>
+                </div>
+
+                <div class="col-sm-6">
+                  <label for="billing-phone" class="form-label fw-semibold text-dark" style="font-size: 0.88rem;">
+                    Mobile Number <span class="text-danger">*</span>
+                  </label>
+                  <input type="tel" id="billing-phone" class="form-control" value="+91 98765 43210" placeholder="+91 98765 43210" required>
+                  <div class="invalid-feedback">Contact number required for dispatch.</div>
+                </div>
+
+                <div class="col-12">
+                  <label for="billing-address" class="form-label fw-semibold text-dark" style="font-size: 0.88rem;">
+                    Street Address & House / Flat No. <span class="text-danger">*</span>
+                  </label>
+                  <input type="text" id="billing-address" class="form-control" value="Flat 402, Lotus Heritage Heights, 14th Cross" placeholder="Apartment, suite, building, street" required>
+                  <div class="invalid-feedback">Street address is required.</div>
+                </div>
+
+                <div class="col-sm-4">
+                  <label for="billing-city" class="form-label fw-semibold text-dark" style="font-size: 0.88rem;">
+                    City <span class="text-danger">*</span>
+                  </label>
+                  <input type="text" id="billing-city" class="form-control" value="Mumbai" required>
+                  <div class="invalid-feedback">City is required.</div>
+                </div>
+
+                <div class="col-sm-4">
+                  <label for="billing-state" class="form-label fw-semibold text-dark" style="font-size: 0.88rem;">
+                    State <span class="text-danger">*</span>
+                  </label>
+                  <select id="billing-state" class="form-select" required>
+                    <option value="Maharashtra" selected>Maharashtra</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Delhi NCR">Delhi NCR</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="West Bengal">West Bengal</option>
+                    <option value="Other">Other State / UT</option>
+                  </select>
+                </div>
+
+                <div class="col-sm-4">
+                  <label for="billing-pin" class="form-label fw-semibold text-dark" style="font-size: 0.88rem;">
+                    PIN Code <span class="text-danger">*</span>
+                  </label>
+                  <input type="text" id="billing-pin" class="form-control" value="400001" placeholder="6-digit PIN" pattern="[0-9]{6}" required>
+                  <div class="invalid-feedback">Valid 6-digit PIN required.</div>
+                </div>
+
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gift-message-check" checked>
+                    <label class="form-check-label text-muted" for="gift-message-check" style="font-size: 0.85rem;">
+                      Include a handwritten brass calligraphy greeting card (Complimentary)
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 2: Payment Simulation -->
+            <div class="checkout-section-box">
+              <div class="checkout-step-header">
+                <span class="step-num">2</span>
+                <div>
+                  <h4 class="h5 fw-bold mb-0 font-serif">Payment Method (Simulation)</h4>
+                  <small class="text-muted">Select Cash on Delivery for instant visual prototype demonstration</small>
+                </div>
+              </div>
+
+              <!-- Payment Method 1: COD (Pre-selected) -->
+              <div class="payment-method-card active mb-3">
+                <div class="form-check d-flex align-items-center gap-3">
+                  <input class="form-check-input mt-0" type="radio" name="paymentOption" id="payment-cod" value="cod" checked>
+                  <label class="form-check-label flex-grow-1" for="payment-cod">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <strong class="text-dark">Cash on Delivery (Recommended for Demo)</strong>
+                      <span class="badge badge-sage">Verified</span>
+                    </div>
+                    <small class="text-muted d-block mt-1">
+                      Pay via cash or UPI scan upon parcel delivery at your doorstep. No prepayment necessary.
+                    </small>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Payment Method 2: UPI Simulation -->
+              <div class="payment-method-card mb-3">
+                <div class="form-check d-flex align-items-center gap-3">
+                  <input class="form-check-input mt-0" type="radio" name="paymentOption" id="payment-upi" value="upi">
+                  <label class="form-check-label flex-grow-1" for="payment-upi">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <strong class="text-dark">UPI / QR Code (Demo Simulation)</strong>
+                      <span class="text-muted" style="font-size: 0.8rem;">GPay, PhonePe, Paytm</span>
+                    </div>
+                    <small class="text-muted d-block mt-1">
+                      Instant simulated settlement for project demonstration.
+                    </small>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Payment Method 3: Cards Simulation -->
+              <div class="payment-method-card">
+                <div class="form-check d-flex align-items-center gap-3">
+                  <input class="form-check-input mt-0" type="radio" name="paymentOption" id="payment-card" value="card">
+                  <label class="form-check-label flex-grow-1" for="payment-card">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <strong class="text-dark">Credit / Debit Card (Demo Simulation)</strong>
+                      <span class="text-muted" style="font-size: 0.8rem;">Visa, Mastercard, RuPay</span>
+                    </div>
+                    <small class="text-muted d-block mt-1">
+                      Simulated 3D-secure card gateway flow.
+                    </small>
+                  </label>
+                </div>
+              </div>
+
+              <div class="alert alert-light border mt-3 mb-0 p-3" style="font-size: 0.82rem; background-color: var(--bg-surface-soft);">
+                <i class="bi bi-info-circle text-primary me-1"></i>
+                <strong>ITT College Assignment Note:</strong> This is a visual prototype. Clicking "Place Order" simulates an instant, successful order confirmation without processing real payments or charging cards.
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Order Summary Preview & Confirmation Trigger -->
+          <div class="col-lg-5">
+            <div class="order-summary-card">
+              <div class="d-flex justify-content-between align-items-center mb-3 border-bottom pb-2">
+                <h4 class="h5 fw-bold font-serif mb-0">Order Summary</h4>
+                <span class="badge badge-artisan" id="checkout-items-count">3 items</span>
+              </div>
+
+              <!-- Product items preview list -->
+              <div class="mb-3" id="checkout-items-list" style="max-height: 280px; overflow-y: auto;">
+                <!-- Populated via script.js -->
+              </div>
+
+              <!-- Pricing breakdown -->
+              <div class="order-summary-row">
+                <span>Subtotal</span>
+                <span id="checkout-subtotal" class="fw-semibold text-dark">₹0</span>
+              </div>
+
+              <div class="order-summary-row text-success" id="checkout-discount-row" style="display: none;">
+                <span>Voucher Discount</span>
+                <span id="checkout-discount" class="fw-semibold">-₹0</span>
+              </div>
+
+              <div class="order-summary-row">
+                <span>Artisan Safe Shipping</span>
+                <span id="checkout-shipping">FREE</span>
+              </div>
+
+              <div class="order-summary-row total">
+                <span>Total Payable</span>
+                <span id="checkout-total">₹0</span>
+              </div>
+
+              <!-- Place Order Button -->
+              <button type="submit" id="btn-place-order" class="btn btn-terracotta w-100 py-3 mt-4 shadow fs-6">
+                <i class="bi bi-shield-check me-2"></i> Place Order (Demo COD)
+              </button>
+
+              <div class="text-center mt-3">
+                <a href="cart.html" class="text-muted text-decoration-none" style="font-size: 0.85rem;">
+                  <i class="bi bi-arrow-left me-1"></i> Return to Shopping Cart
+                </a>
+              </div>
+
+              <!-- Artisan Delivery Guarantee Box -->
+              <div class="mt-4 pt-3 border-top text-muted" style="font-size: 0.8rem; line-height: 1.5;">
+                <div class="d-flex align-items-start gap-2 mb-2">
+                  <i class="bi bi-box2-heart text-primary fs-5"></i>
+                  <div>
+                    <strong>Plastic-Free Artisan Packaging:</strong> Each parcel is wrapped in recyclable kraft padding and tied with jute twine.
+                  </div>
+                </div>
+                <div class="d-flex align-items-start gap-2">
+                  <i class="bi bi-truck text-success fs-5"></i>
+                  <div>
+                    <strong>Dispatch Promise:</strong> Hand-inspected and shipped within 48 hours directly from artisan clusters.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <!-- Polished Order Confirmation Modal -->
+  <div class="modal fade" id="orderSuccessModal" tabindex="-1" aria-labelledby="orderSuccessModalLabel" aria-hidden="true" data-bs-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+        
+        <div class="modal-body p-4 p-md-5 text-center">
+          <!-- Animated Checkmark Circle -->
+          <div class="success-checkmark-circle mx-auto">
+            <i class="bi bi-check2"></i>
+          </div>
+
+          <span class="badge badge-sage mb-2 px-3 py-1 fw-semibold">Order Successfully Simulated</span>
+          <h2 class="display-6 font-serif fw-bold text-dark mb-2">Thank You For Your Patronage!</h2>
+          <p class="text-muted mx-auto mb-4" style="max-width: 540px;">
+            Your order has been recorded in this visual prototype. Our master artisans have received the dispatch notice and are carefully hand-packing your gifts.
+          </p>
+
+          <!-- Order Summary Ticket Card -->
+          <div class="bg-light p-4 rounded-4 text-start border border-light mb-4" style="background-color: var(--bg-surface-tint) !important;">
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <small class="text-muted d-block">Demo Order ID</small>
+                <strong class="fs-5 text-primary font-monospace" id="modal-order-id">#HG-2026-8941</strong>
+              </div>
+              <div class="col-sm-6">
+                <small class="text-muted d-block">Payment Mode</small>
+                <strong class="text-dark">Cash on Delivery (Simulated)</strong>
+              </div>
+              <div class="col-sm-6">
+                <small class="text-muted d-block">Deliver To</small>
+                <strong class="text-dark d-block" id="modal-customer-name">Ananya Sharma (+91 98765 43210)</strong>
+                <span class="text-muted" style="font-size: 0.85rem;" id="modal-customer-address">Flat 402, Lotus Heritage, Mumbai, Maharashtra - 400001</span>
+              </div>
+              <div class="col-sm-6">
+                <small class="text-muted d-block">Estimated Arrival</small>
+                <strong class="text-success" id="modal-delivery-date">5 Days From Today</strong>
+                <span class="d-block text-muted" style="font-size: 0.85rem;">Total Amount: <span class="fw-bold text-dark" id="modal-order-total">₹2,397</span></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Prototype Demonstration Banner -->
+          <div class="demo-banner-badge p-3 mb-4 text-center">
+            <strong>🎓 College ITT Assignment Demonstration Complete:</strong>
+            <p class="mb-0" style="font-size: 0.82rem;">
+              This screen confirms that the checkout workflow, quantity management, form validation, and simulated order placement are fully functional for report screenshots.
+            </p>
+          </div>
+
+          <!-- Modal Action Buttons -->
+          <div class="d-flex flex-wrap justify-content-center gap-3">
+            <button type="button" class="btn btn-outline-secondary rounded-pill px-4" onclick="showToast('Invoice Preview', 'Demo PDF invoice simulation initiated.');">
+              <i class="bi bi-printer me-2"></i> Print Demo Receipt
+            </button>
+            <a href="index.html" class="btn btn-terracotta rounded-pill px-4">
+              <i class="bi bi-house-heart me-2"></i> Return to Home
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Professional Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Brand Info -->
+        <div class="col-lg-4 col-md-6">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <span class="brand-icon bg-light text-primary rounded-circle p-2 fs-5"><i class="bi bi-gift-fill"></i></span>
+            <span class="fs-4 fw-bold text-white font-serif">Handmade Gifts</span>
+          </div>
+          <p class="footer-brand-desc">
+            An ethical e-commerce initiative dedicated to celebrating and preserving authentic traditional craft traditions. We connect rural Indian karigar guilds directly with thoughtful patrons worldwide.
+          </p>
+          <div class="d-flex">
+            <a href="#" class="footer-social-link" title="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="footer-social-link" title="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="footer-social-link" title="Pinterest"><i class="bi bi-pinterest"></i></a>
+            <a href="#" class="footer-social-link" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5>Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">All Products</a></li>
+            <li><a href="product-details.html?id=1">Featured Gift</a></li>
+            <li><a href="cart.html">Shopping Cart</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+            <li><a href="contact.html">About & Heritage</a></li>
+          </ul>
+        </div>
+
+        <!-- Categories -->
+        <div class="col-lg-3 col-md-6 col-6">
+          <h5>Craft Categories</h5>
+          <ul class="footer-links">
+            <li><a href="products.html?category=Ceramics%20%26%20Pottery">Ceramics & Clay</a></li>
+            <li><a href="products.html?category=Candles%20%26%20Fragrance">Soy & Aroma Candles</a></li>
+            <li><a href="products.html?category=Home%20Decor">Macrame Tapestries</a></li>
+            <li><a href="products.html?category=Wooden%20Crafts">Sheesham Wood Crafts</a></li>
+            <li><a href="products.html?category=Handcrafted%20Jewelry">Brass & Silver Jewelry</a></li>
+            <li><a href="products.html?category=Gift%20Hampers">Curated Gift Boxes</a></li>
+          </ul>
+        </div>
+
+        <!-- Customer Care & Demo Disclaimer -->
+        <div class="col-lg-3 col-md-6">
+          <h5>Artisan Studio</h5>
+          <p class="text-muted mb-2"><i class="bi bi-geo-alt me-2 text-primary"></i> 42 Artisan Lane, Kala Ghoda, Mumbai - 400001 (Demo)</p>
+          <p class="text-muted mb-2"><i class="bi bi-telephone me-2 text-primary"></i> +91 98200 12345 (Demo Support)</p>
+          <p class="text-muted mb-3"><i class="bi bi-envelope me-2 text-primary"></i> support@handmadegifts-demo.org</p>
+          
+          <div class="demo-banner-badge p-2 mt-2">
+            <strong>🎓 College ITT Assignment:</strong>
+            <div style="font-size: 0.75rem;">Visual prototype created for student project report demonstration.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <div>
+          &copy; 2026 Handmade Gifts Prototype. Handcrafted for College ITT Assignment.
+        </div>
+        <div class="d-flex gap-3">
+          <a href="login.html" class="text-muted text-decoration-none">Patron Login</a>
+          <a href="register.html" class="text-muted text-decoration-none">Register</a>
+          <a href="contact.html" class="text-muted text-decoration-none">Artisan Guilds</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom Prototype JS -->
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

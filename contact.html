@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us & Contact — Handmade Gifts</title>
+  <meta name="description" content="Discover our heritage mission, meet rural Indian artisan guilds, and get in touch with our handcrafted gifting studio.">
+
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+  <!-- Google Fonts: Playfair Display & Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar text-center">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="d-none d-md-block text-start">
+        <i class="bi bi-geo-alt me-1"></i> Pan-India Handcrafted Delivery
+      </div>
+      <div class="mx-auto">
+        ✨ <strong>Festive Gifting Offer:</strong> Use code <span class="badge bg-light text-dark fw-bold px-2 py-1">ARTISAN20</span> for 20% off on all gift hampers | Free shipping over ₹999
+      </div>
+      <div class="d-none d-md-block text-end">
+        <a href="contact.html#contact-section">Artisan Helpdesk</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Bar -->
+  <nav class="navbar navbar-expand-lg custom-navbar sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <span class="brand-icon"><i class="bi bi-gift-fill"></i></span>
+        <div>
+          <div>Handmade Gifts</div>
+          <span class="brand-sub">Crafted With Devotion</span>
+        </div>
+      </a>
+
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="products.html">Products</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Categories
+            </a>
+            <ul class="dropdown-menu border-0 shadow-sm rounded-3 mt-2">
+              <li><a class="dropdown-item py-2" href="products.html?category=Ceramics%20%26%20Pottery"><i class="bi bi-flower1 me-2 text-primary"></i>Ceramics & Pottery</a></li>
+              <li><a class="dropdown-item py-2" href="products.html?category=Candles%20%26%20Fragrance"><i class="bi bi-fire me-2 text-primary"></i>Candles & Fragrance</a></li>
+              <li><a class="dropdown-item py-2" href="products.html?category=Home%20Decor"><i class="bi bi-house-heart me-2 text-primary"></i>Home Decor & Macrame</a></li>
+              <li><a class="dropdown-item py-2" href="products.html?category=Wooden%20Crafts"><i class="bi bi-tree me-2 text-primary"></i>Wooden Crafts & Journals</a></li>
+              <li><a class="dropdown-item py-2" href="products.html?category=Handcrafted%20Jewelry"><i class="bi bi-gem me-2 text-primary"></i>Handcrafted Jewelry</a></li>
+              <li><a class="dropdown-item py-2" href="products.html?category=Bath%20%26%20Body"><i class="bi bi-droplet me-2 text-primary"></i>Organic Bath & Body</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item py-2 fw-semibold text-primary" href="products.html?category=Gift%20Hampers"><i class="bi bi-box2-heart me-2"></i>Curated Gift Hampers</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="contact.html">About & Heritage</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-section">Contact Us</a>
+          </li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="login.html" class="nav-icon-btn" title="Account / Sign In">
+            <i class="bi bi-person"></i>
+          </a>
+          <a href="cart.html" class="nav-icon-btn" title="Shopping Cart">
+            <i class="bi bi-bag"></i>
+            <span class="badge-counter cart-badge-count">3</span>
+          </a>
+          <a href="register.html" class="btn btn-outline-terracotta d-none d-md-inline-flex ms-2">
+            Join Guild
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header Breadcrumb Banner -->
+  <section class="py-5" style="background: linear-gradient(135deg, #FAF7F2 0%, #F5ECE5 100%); border-bottom: 1px solid var(--border-light);">
+    <div class="container text-center">
+      <span class="badge badge-artisan mb-2"><i class="bi bi-heart-pulse-fill"></i> Our Sacred Heritage</span>
+      <h1 class="display-5 fw-bold font-serif mb-3">Honoring the Hands That Create</h1>
+      <p class="text-muted mx-auto lead" style="max-width: 650px; font-size: 1.05rem;">
+        Handmade Gifts is an ethical e-commerce initiative bridging authentic rural Indian karigar guilds directly to thoughtful gifting patrons across the nation.
+      </p>
+    </div>
+  </section>
+
+  <main>
+    <!-- About Us Section -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="position-relative">
+              <img src="https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?auto=format&fit=crop&w=800&q=80" alt="Master Potter Crafting Clay" class="img-fluid rounded-4 shadow-lg" style="height: 420px; width: 100%; object-fit: cover;">
+              <div class="position-absolute bottom-0 start-0 translate-middle-y bg-white p-3 rounded-3 shadow-md border ms-3 d-none d-sm-block" style="max-width: 250px;">
+                <div class="d-flex align-items-center gap-2">
+                  <i class="bi bi-award-fill text-warning fs-3"></i>
+                  <div>
+                    <h6 class="mb-0 fw-bold">Fair Wages Guaranteed</h6>
+                    <small class="text-muted">Direct cluster payout model</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <span class="badge badge-sage mb-2"><i class="bi bi-sparkles"></i> The Artisan Philosophy</span>
+            <h2 class="display-6 fw-bold font-serif mb-3">Why Handmade Gifting Matters</h2>
+            <p class="text-muted mb-3" style="line-height: 1.7;">
+              In an era dominated by rapid synthetic mass manufacture, true luxury is patience. Every terracotta vessel, hand-knotted macrame tassel, and soy candle we offer takes hours, sometimes days, of specialized craft technique.
+            </p>
+            <p class="text-muted mb-4" style="line-height: 1.7;">
+              When you choose a handmade gift, you don't merely send an object; you share an artisan's heritage, support a rural weaver or potter's livelihood, and gift something with authentic human spirit.
+            </p>
+
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <div class="d-flex align-items-start gap-2">
+                  <i class="bi bi-check-circle-fill text-primary fs-5 mt-1"></i>
+                  <div>
+                    <strong class="d-block text-dark">Zero Middlemen</strong>
+                    <small class="text-muted">Direct guild partnership with full fair-trade compensation.</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex align-items-start gap-2">
+                  <i class="bi bi-check-circle-fill text-primary fs-5 mt-1"></i>
+                  <div>
+                    <strong class="d-block text-dark">Plantable Keepsakes</strong>
+                    <small class="text-muted">Seed paper labels and dried floral nesting in every parcel.</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission & Core Values Section -->
+    <section class="py-5" style="background-color: var(--bg-surface-tint);">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="badge badge-artisan mb-2"><i class="bi bi-compass"></i> Guiding Principles</span>
+          <h2 class="display-6 fw-bold font-serif">Our Four Core Values</h2>
+          <p class="text-muted mx-auto" style="max-width: 520px;">
+            The ethical pillars behind every collection, parcel, and relationship we nurture.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="artisan-value-card text-center">
+              <div class="feature-icon-wrap mx-auto">
+                <i class="bi bi-hourglass-split"></i>
+              </div>
+              <h5 class="fw-bold font-serif mb-2">Heritage Preservation</h5>
+              <p class="text-muted" style="font-size: 0.88rem;">
+                Documenting and championing endangered craft disciplines from Khurja pottery to Cuttack silver filigree.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="artisan-value-card text-center">
+              <div class="feature-icon-wrap mx-auto">
+                <i class="bi bi-gender-ambiguous"></i>
+              </div>
+              <h5 class="fw-bold font-serif mb-2">Empowering Women Artisans</h5>
+              <p class="text-muted" style="font-size: 0.88rem;">
+                Over 65% of our weaving and herbal soap cooperatives are operated by rural women collectives.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="artisan-value-card text-center">
+              <div class="feature-icon-wrap mx-auto">
+                <i class="bi bi-flower3"></i>
+              </div>
+              <h5 class="fw-bold font-serif mb-2">Zero Plastic Earth Ethos</h5>
+              <p class="text-muted" style="font-size: 0.88rem;">
+                100% biodegradable corrugated cardboard, natural jute string, and plantable wildflower tags.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="artisan-value-card text-center">
+              <div class="feature-icon-wrap mx-auto">
+                <i class="bi bi-heart-fill"></i>
+              </div>
+              <h5 class="fw-bold font-serif mb-2">Heartfelt Gifting</h5>
+              <p class="text-muted" style="font-size: 0.88rem;">
+                Complimentary personalized calligraphy greeting notes and wax-sealed certificates with every order.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Meet The Artisans Spotlight -->
+    <section class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="badge badge-sage mb-2"><i class="bi bi-people-fill"></i> Voices of Craft</span>
+          <h2 class="display-6 fw-bold font-serif">Meet Our Master Craftsmen</h2>
+          <p class="text-muted mx-auto" style="max-width: 520px;">
+            The real faces and hands behind your most cherished handmade pieces.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="bg-white rounded-4 overflow-hidden border border-light shadow-sm text-center">
+              <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=600&q=80" alt="Master Potter" style="height: 240px; width: 100%; object-fit: cover;">
+              <div class="p-4">
+                <h5 class="fw-bold font-serif mb-1">Sunita Devi</h5>
+                <span class="badge badge-artisan mb-2">Master Potter • Khurja Guild</span>
+                <p class="text-muted" style="font-size: 0.88rem;">
+                  "Shaping clay on the wheel connects me to my ancestors. When a customer appreciates our kulhads, our village feels heard."
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="bg-white rounded-4 overflow-hidden border border-light shadow-sm text-center">
+              <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=600&q=80" alt="Master Wood Carver" style="height: 240px; width: 100%; object-fit: cover;">
+              <div class="p-4">
+                <h5 class="fw-bold font-serif mb-1">Ram Swaroop Sharma</h5>
+                <span class="badge badge-artisan mb-2">Woodcarver • Saharanpur</span>
+                <p class="text-muted" style="font-size: 0.88rem;">
+                  "Carving Sheesham hardwood requires stillness of breath and respect for the wood grain. Heirloom quality takes no shortcuts."
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="bg-white rounded-4 overflow-hidden border border-light shadow-sm text-center">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" alt="Botanical Soy Candlemaker" style="height: 240px; width: 100%; object-fit: cover;">
+              <div class="p-4">
+                <h5 class="fw-bold font-serif mb-1">Dr. Ananya Roy</h5>
+                <span class="badge badge-sage mb-2">Natural Herbalist • Auroville</span>
+                <p class="text-muted" style="font-size: 0.88rem;">
+                  "We cure our cold-pressed artisan soaps for 6 weeks under coastal sun. Pure botanicals heal both skin and mind."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Information & Inquiry Form Section -->
+    <section class="py-5" id="contact-section" style="background-color: var(--bg-surface-soft);">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="badge badge-artisan mb-2"><i class="bi bi-chat-dots-fill"></i> Gifting Concierge</span>
+          <h2 class="display-6 fw-bold font-serif">Get in Touch With Us</h2>
+          <p class="text-muted mx-auto" style="max-width: 550px;">
+            Have questions regarding custom wedding favors, bulk corporate hampers, or artisanal care? Our concierge desk is here to assist.
+          </p>
+        </div>
+
+        <div class="row g-5">
+          
+          <!-- Left Column: Contact Cards with Fictional Demonstration Details -->
+          <div class="col-lg-5">
+            <h4 class="h5 fw-bold font-serif mb-3">Artisan Studio Details</h4>
+            
+            <!-- Address Card -->
+            <div class="contact-info-card">
+              <div class="contact-info-icon">
+                <i class="bi bi-geo-alt"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold text-dark mb-1">Handmade Gifts Studio</h6>
+                <p class="text-muted mb-1" style="font-size: 0.88rem;">
+                  42 Artisan Heritage Lane, Kala Ghoda Arts District, Mumbai - 400001, Maharashtra, India.
+                </p>
+                <span class="badge bg-light text-muted border" style="font-size: 0.72rem;">(Demo College Project Address)</span>
+              </div>
+            </div>
+
+            <!-- Phone Card -->
+            <div class="contact-info-card">
+              <div class="contact-info-icon">
+                <i class="bi bi-telephone"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold text-dark mb-1">Phone & Concierge</h6>
+                <p class="text-muted mb-1" style="font-size: 0.88rem;">
+                  +91 (022) 5550-CRAFT<br>
+                  +91 98200 12345 (Demo Support Line)
+                </p>
+                <small class="text-muted">Mon - Sat: 9:30 AM — 7:00 PM IST</small>
+              </div>
+            </div>
+
+            <!-- Email Card -->
+            <div class="contact-info-card">
+              <div class="contact-info-icon">
+                <i class="bi bi-envelope"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold text-dark mb-1">Electronic Mail</h6>
+                <p class="text-muted mb-0" style="font-size: 0.88rem;">
+                  support@handmadegifts-demo.org<br>
+                  gifting.concierge@handmadegifts-demo.org
+                </p>
+              </div>
+            </div>
+
+            <!-- Simulated Map Preview Box -->
+            <div class="bg-white p-3 rounded-4 border border-light shadow-sm text-center">
+              <div class="d-flex align-items-center justify-content-center gap-2 text-muted mb-2">
+                <i class="bi bi-map text-primary"></i>
+                <span class="fw-semibold" style="font-size: 0.88rem;">Kala Ghoda Craft Studio Location</span>
+              </div>
+              <div class="p-4 rounded-3 text-muted" style="background-color: var(--bg-surface-soft); border: 1.5px dashed var(--border-light);">
+                <i class="bi bi-pin-map-fill text-danger fs-2 d-block mb-1"></i>
+                <span style="font-size: 0.85rem;">Interactive Studio Map (Simulated Prototype)</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Interactive Contact Form -->
+          <div class="col-lg-7">
+            <div class="bg-white p-4 p-md-5 rounded-4 border border-light shadow-sm">
+              <h4 class="h5 fw-bold font-serif mb-1">Send a Message to Our Concierge</h4>
+              <p class="text-muted mb-4" style="font-size: 0.88rem;">
+                Fill out the form below. Our gifting team responds within 24 working hours.
+              </p>
+
+              <form id="contact-form" novalidate>
+                <div class="row g-3">
+                  <div class="col-sm-6">
+                    <label for="contact-name" class="form-label fw-semibold text-dark" style="font-size: 0.88rem;">
+                      Your Name <span class="text-danger">*</span>
+                    </label>
+                    <input type="text" id="contact-name" class="form-control" placeholder="e.g. Radhika Sen" required>
+                    <div class="invalid-feedback">Please enter your name.</div>
+                  </div>
+
+                  <div class="col-sm-6">
+                    <label for="contact-email" class="form-label fw-semibold text-dark" style="font-size: 0.88rem;">
+                      Email Address <span class="text-danger">*</span>
+                    </label>
+                    <input type="email" id="contact-email" class="form-control" placeholder="name@example.com" required>
+                    <div class="invalid-feedback">Please provide a valid email.</div>
+                  </div>
+
+                  <div class="col-sm-6">
+                    <label for="contact-phone" class="form-label fw-semibold text-dark" style="font-size: 0.88rem;">
+                      Phone Number
+                    </label>
+                    <input type="tel" id="contact-phone" class="form-control" placeholder="+91 98765 43210">
+                  </div>
+
+                  <div class="col-sm-6">
+                    <label for="contact-subject" class="form-label fw-semibold text-dark" style="font-size: 0.88rem;">
+                      Inquiry Type <span class="text-danger">*</span>
+                    </label>
+                    <select id="contact-subject" class="form-select" required>
+                      <option value="General Question" selected>General Gifting Question</option>
+                      <option value="Wedding Favors">Custom Wedding Favors</option>
+                      <option value="Corporate Hampers">Bulk Corporate Hampers</option>
+                      <option value="Artisan Partnership">Artisan Guild Collaboration</option>
+                      <option value="Order Tracking">Order & Delivery Assistance</option>
+                    </select>
+                  </div>
+
+                  <div class="col-12">
+                    <label for="contact-message" class="form-label fw-semibold text-dark" style="font-size: 0.88rem;">
+                      Your Message <span class="text-danger">*</span>
+                    </label>
+                    <textarea id="contact-message" class="form-control" rows="5" placeholder="Tell us about the craft you are looking for, order numbers, or custom gifting needs..." required></textarea>
+                    <div class="invalid-feedback">Please enter your message.</div>
+                  </div>
+
+                  <div class="col-12 mt-4">
+                    <button type="submit" class="btn btn-terracotta w-100 py-3 shadow-sm">
+                      <i class="bi bi-send-fill me-2"></i> Submit Inquiry (Demo)
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Frequently Asked Questions (FAQ) Accordion -->
+    <section class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="badge badge-sage mb-2"><i class="bi bi-patch-question-fill"></i> Common Inquiries</span>
+          <h2 class="display-6 fw-bold font-serif">Frequently Asked Questions</h2>
+          <p class="text-muted mx-auto" style="max-width: 520px;">
+            Answers to common questions about handcrafted gifting, delivery, and artisan authenticity.
+          </p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="accordion shadow-sm rounded-4 overflow-hidden border border-light" id="faqAccordion">
+              
+              <!-- FAQ 1 -->
+              <div class="accordion-item border-0 border-bottom">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button collapsed fw-semibold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    How do I know these gifts are genuinely handmade?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body text-muted" style="font-size: 0.92rem; line-height: 1.6;">
+                    Every single item comes accompanied by an authentic Karigar Certificate specifying the artisan's name, craft lineage, village cluster, and individual creation number. Subtle natural variations in glaze, weave, and carving are celebrated hallmarks of human craftsmanship.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 2 -->
+              <div class="accordion-item border-0 border-bottom">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed fw-semibold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Can I personalize greeting cards for gifting?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body text-muted" style="font-size: 0.92rem; line-height: 1.6;">
+                    Yes! During checkout, simply leave the "Handwritten calligraphy card" option checked. Our studio calligraphers hand-write your custom message using archival ink on handmade cotton rag paper, sealed with traditional wax.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 3 -->
+              <div class="accordion-item border-0 border-bottom">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed fw-semibold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    What is your shatter-proof packaging guarantee?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body text-muted" style="font-size: 0.92rem; line-height: 1.6;">
+                    For delicate ceramics, terracotta, and glassware, we utilize 5-ply honeycomb corrugated cushions, reinforced biodegradable corner guards, and straw nesting. In the rare event of transit damage, we provide an immediate no-questions-asked artisan replacement.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 4 -->
+              <div class="accordion-item border-0">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed fw-semibold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Is Cash on Delivery available across India?
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body text-muted" style="font-size: 0.92rem; line-height: 1.6;">
+                    Yes, simulated Cash on Delivery is supported across all major PIN codes with zero COD surcharge for this prototype demonstration.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Professional Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Brand Info -->
+        <div class="col-lg-4 col-md-6">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <span class="brand-icon bg-light text-primary rounded-circle p-2 fs-5"><i class="bi bi-gift-fill"></i></span>
+            <span class="fs-4 fw-bold text-white font-serif">Handmade Gifts</span>
+          </div>
+          <p class="footer-brand-desc">
+            An ethical e-commerce initiative dedicated to celebrating and preserving authentic traditional craft traditions. We connect rural Indian karigar guilds directly with thoughtful patrons worldwide.
+          </p>
+          <div class="d-flex">
+            <a href="#" class="footer-social-link" title="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="footer-social-link" title="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="footer-social-link" title="Pinterest"><i class="bi bi-pinterest"></i></a>
+            <a href="#" class="footer-social-link" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5>Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">All Products</a></li>
+            <li><a href="product-details.html?id=1">Featured Gift</a></li>
+            <li><a href="cart.html">Shopping Cart</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+            <li><a href="contact.html">About & Heritage</a></li>
+          </ul>
+        </div>
+
+        <!-- Categories -->
+        <div class="col-lg-3 col-md-6 col-6">
+          <h5>Craft Categories</h5>
+          <ul class="footer-links">
+            <li><a href="products.html?category=Ceramics%20%26%20Pottery">Ceramics & Clay</a></li>
+            <li><a href="products.html?category=Candles%20%26%20Fragrance">Soy & Aroma Candles</a></li>
+            <li><a href="products.html?category=Home%20Decor">Macrame Tapestries</a></li>
+            <li><a href="products.html?category=Wooden%20Crafts">Sheesham Wood Crafts</a></li>
+            <li><a href="products.html?category=Handcrafted%20Jewelry">Brass & Silver Jewelry</a></li>
+            <li><a href="products.html?category=Gift%20Hampers">Curated Gift Boxes</a></li>
+          </ul>
+        </div>
+
+        <!-- Customer Care & Demo Disclaimer -->
+        <div class="col-lg-3 col-md-6">
+          <h5>Artisan Studio</h5>
+          <p class="text-muted mb-2"><i class="bi bi-geo-alt me-2 text-primary"></i> 42 Artisan Lane, Kala Ghoda, Mumbai - 400001 (Demo)</p>
+          <p class="text-muted mb-2"><i class="bi bi-telephone me-2 text-primary"></i> +91 98200 12345 (Demo Support)</p>
+          <p class="text-muted mb-3"><i class="bi bi-envelope me-2 text-primary"></i> support@handmadegifts-demo.org</p>
+          
+          <div class="demo-banner-badge p-2 mt-2">
+            <strong>🎓 College ITT Assignment:</strong>
+            <div style="font-size: 0.75rem;">Visual prototype created for student project report demonstration.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <div>
+          &copy; 2026 Handmade Gifts Prototype. Handcrafted for College ITT Assignment.
+        </div>
+        <div class="d-flex gap-3">
+          <a href="login.html" class="text-muted text-decoration-none">Patron Login</a>
+          <a href="register.html" class="text-muted text-decoration-none">Register</a>
+          <a href="contact.html" class="text-muted text-decoration-none">Artisan Guilds</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom Prototype JS -->
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create an Account — Handmade Gifts</title>
+  <meta name="description" content="Join our patron community supporting traditional Indian artisans and handcrafted craft guilds.">
+
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+  <!-- Google Fonts: Playfair Display & Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar text-center">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="d-none d-md-block text-start">
+        <i class="bi bi-geo-alt me-1"></i> Pan-India Handcrafted Delivery
+      </div>
+      <div class="mx-auto">
+        ✨ <strong>Festive Gifting Offer:</strong> Use code <span class="badge bg-light text-dark fw-bold px-2 py-1">ARTISAN20</span> for 20% off on all gift hampers | Free shipping over ₹999
+      </div>
+      <div class="d-none d-md-block text-end">
+        <a href="contact.html">Artisan Helpdesk</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Bar -->
+  <nav class="navbar navbar-expand-lg custom-navbar sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <span class="brand-icon"><i class="bi bi-gift-fill"></i></span>
+        <div>
+          <div>Handmade Gifts</div>
+          <span class="brand-sub">Crafted With Devotion</span>
+        </div>
+      </a>
+
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="products.html">Products</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Categories
+            </a>
+            <ul class="dropdown-menu border-0 shadow-sm rounded-3 mt-2">
+              <li><a class="dropdown-item py-2" href="products.html?category=Ceramics%20%26%20Pottery"><i class="bi bi-flower1 me-2 text-primary"></i>Ceramics & Pottery</a></li>
+              <li><a class="dropdown-item py-2" href="products.html?category=Candles%20%26%20Fragrance"><i class="bi bi-fire me-2 text-primary"></i>Candles & Fragrance</a></li>
+              <li><a class="dropdown-item py-2" href="products.html?category=Home%20Decor"><i class="bi bi-house-heart me-2 text-primary"></i>Home Decor & Macrame</a></li>
+              <li><a class="dropdown-item py-2" href="products.html?category=Wooden%20Crafts"><i class="bi bi-tree me-2 text-primary"></i>Wooden Crafts & Journals</a></li>
+              <li><a class="dropdown-item py-2" href="products.html?category=Handcrafted%20Jewelry"><i class="bi bi-gem me-2 text-primary"></i>Handcrafted Jewelry</a></li>
+              <li><a class="dropdown-item py-2" href="products.html?category=Bath%20%26%20Body"><i class="bi bi-droplet me-2 text-primary"></i>Organic Bath & Body</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item py-2 fw-semibold text-primary" href="products.html?category=Gift%20Hampers"><i class="bi bi-box2-heart me-2"></i>Curated Gift Hampers</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">About & Heritage</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html#contact-section">Contact Us</a>
+          </li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="login.html" class="nav-icon-btn" title="Account / Sign In">
+            <i class="bi bi-person"></i>
+          </a>
+          <a href="cart.html" class="nav-icon-btn" title="Shopping Cart">
+            <i class="bi bi-bag"></i>
+            <span class="badge-counter cart-badge-count">3</span>
+          </a>
+          <a href="register.html" class="btn btn-terracotta d-none d-md-inline-flex ms-2">
+            Join Guild
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Register Page Main Container -->
+  <main class="auth-wrapper">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10 col-xl-9">
+          <div class="auth-card">
+            <div class="row g-0">
+              
+              <!-- Left Decorative Side Panel -->
+              <div class="col-md-5 d-none d-md-flex flex-column justify-content-between p-5 text-white" style="background: linear-gradient(135deg, #B85C38 0%, #8A5237 60%, #4E2715 100%); position: relative; overflow: hidden;">
+                <div style="z-index: 2;">
+                  <span class="badge bg-white text-dark mb-3 px-3 py-1 fw-semibold">Patron Guild</span>
+                  <h3 class="display-6 font-serif text-white fw-bold mb-3">Join Our Artisan Community</h3>
+                  <p class="text-white-50" style="font-size: 0.95rem; line-height: 1.6;">
+                    Unlock early access to seasonal festival drops, customized gift boxing, and direct patronage certificates honoring rural craftsmen.
+                  </p>
+                </div>
+
+                <div class="mt-4 pt-4 border-top border-white-50" style="z-index: 2;">
+                  <div class="d-flex align-items-center gap-3 mb-3">
+                    <i class="bi bi-patch-check-fill text-warning fs-4"></i>
+                    <small>Direct Fair-Wages to Karigars</small>
+                  </div>
+                  <div class="d-flex align-items-center gap-3">
+                    <i class="bi bi-box2-heart-fill text-warning fs-4"></i>
+                    <small>Complimentary Calligraphy Greeting Cards</small>
+                  </div>
+                </div>
+
+                <!-- Decorative Pattern -->
+                <div style="position: absolute; bottom: -40px; right: -40px; width: 180px; height: 180px; border-radius: 50%; background: rgba(255,255,255,0.06); pointer-events: none;"></div>
+              </div>
+
+              <!-- Right Registration Form -->
+              <div class="col-md-7 p-4 p-lg-5">
+                <div class="d-flex justify-content-between align-items-start mb-4">
+                  <div>
+                    <h2 class="h3 fw-bold font-serif mb-1">Create Account</h2>
+                    <p class="text-muted mb-0" style="font-size: 0.9rem;">Begin your journey of thoughtful handcrafted gifting</p>
+                  </div>
+                  <!-- Quick Fill Demo Details Button -->
+                  <button type="button" id="btn-demo-fill-register" class="btn btn-sm btn-outline-secondary" title="Quick-fill for assignment evaluation">
+                    <i class="bi bi-magic me-1"></i> Quick Demo Fill
+                  </button>
+                </div>
+
+                <!-- Registration Form -->
+                <form id="register-form" novalidate>
+                  
+                  <!-- Full Name Field -->
+                  <div class="mb-3">
+                    <label for="register-name" class="form-label fw-semibold text-dark" style="font-size: 0.88rem;">
+                      Full Name <span class="text-danger">*</span>
+                    </label>
+                    <div class="input-group">
+                      <span class="input-group-text bg-white" style="border-color: rgba(184, 92, 56, 0.2);">
+                        <i class="bi bi-person text-muted"></i>
+                      </span>
+                      <input type="text" id="register-name" class="form-control" placeholder="e.g. Aditya Verma" required>
+                      <div class="invalid-feedback">Please enter your full name.</div>
+                    </div>
+                  </div>
+
+                  <!-- Email Address Field -->
+                  <div class="mb-3">
+                    <label for="register-email" class="form-label fw-semibold text-dark" style="font-size: 0.88rem;">
+                      Email Address <span class="text-danger">*</span>
+                    </label>
+                    <div class="input-group">
+                      <span class="input-group-text bg-white" style="border-color: rgba(184, 92, 56, 0.2);">
+                        <i class="bi bi-envelope text-muted"></i>
+                      </span>
+                      <input type="email" id="register-email" class="form-control" placeholder="name@example.com" required>
+                      <div class="invalid-feedback">Please provide a valid email address.</div>
+                    </div>
+                  </div>
+
+                  <!-- Phone Number Field -->
+                  <div class="mb-3">
+                    <label for="register-phone" class="form-label fw-semibold text-dark" style="font-size: 0.88rem;">
+                      Phone Number <span class="text-danger">*</span>
+                    </label>
+                    <div class="input-group">
+                      <span class="input-group-text bg-white" style="border-color: rgba(184, 92, 56, 0.2);">
+                        <i class="bi bi-telephone text-muted"></i>
+                      </span>
+                      <input type="tel" id="register-phone" class="form-control" placeholder="+91 98200 45678" required>
+                      <div class="invalid-feedback">Please enter your contact phone number.</div>
+                    </div>
+                  </div>
+
+                  <!-- Password & Confirm Password -->
+                  <div class="row g-2 mb-3">
+                    <div class="col-sm-6">
+                      <label for="register-password" class="form-label fw-semibold text-dark" style="font-size: 0.88rem;">
+                        Password <span class="text-danger">*</span>
+                      </label>
+                      <input type="password" id="register-password" class="form-control" placeholder="Min. 8 characters" minlength="6" required>
+                      <div class="invalid-feedback">Enter at least 6 characters.</div>
+                    </div>
+                    <div class="col-sm-6">
+                      <label for="register-confirm-password" class="form-label fw-semibold text-dark" style="font-size: 0.88rem;">
+                        Confirm Password <span class="text-danger">*</span>
+                      </label>
+                      <input type="password" id="register-confirm-password" class="form-control" placeholder="Re-type password" required>
+                      <div class="invalid-feedback">Please repeat your password.</div>
+                    </div>
+                  </div>
+
+                  <!-- Terms & Conditions Checkbox -->
+                  <div class="mb-4 form-check">
+                    <input type="checkbox" class="form-check-input" id="register-terms" required>
+                    <label class="form-check-label text-muted" for="register-terms" style="font-size: 0.84rem;">
+                      I agree to the <a href="contact.html">Terms of Artisan Fair Trade</a> and ethical delivery policy.
+                    </label>
+                    <div class="invalid-feedback">You must agree before registering.</div>
+                  </div>
+
+                  <!-- Submit Button -->
+                  <button type="submit" class="btn btn-terracotta w-100 py-2 mb-3">
+                    <i class="bi bi-person-plus me-2"></i> Create Patron Account
+                  </button>
+
+                  <!-- Link to Login -->
+                  <div class="text-center text-muted" style="font-size: 0.9rem;">
+                    Already have an artisan patron account? 
+                    <a href="login.html" class="fw-semibold text-primary">Sign In here</a>
+                  </div>
+                </form>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Professional Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Brand Info -->
+        <div class="col-lg-4 col-md-6">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <span class="brand-icon bg-light text-primary rounded-circle p-2 fs-5"><i class="bi bi-gift-fill"></i></span>
+            <span class="fs-4 fw-bold text-white font-serif">Handmade Gifts</span>
+          </div>
+          <p class="footer-brand-desc">
+            An ethical e-commerce initiative dedicated to celebrating and preserving authentic traditional craft traditions. We connect rural Indian karigar guilds directly with thoughtful patrons worldwide.
+          </p>
+          <div class="d-flex">
+            <a href="#" class="footer-social-link" title="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="footer-social-link" title="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="footer-social-link" title="Pinterest"><i class="bi bi-pinterest"></i></a>
+            <a href="#" class="footer-social-link" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5>Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">All Products</a></li>
+            <li><a href="product-details.html?id=1">Featured Gift</a></li>
+            <li><a href="cart.html">Shopping Cart</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+            <li><a href="contact.html">About & Heritage</a></li>
+          </ul>
+        </div>
+
+        <!-- Categories -->
+        <div class="col-lg-3 col-md-6 col-6">
+          <h5>Craft Categories</h5>
+          <ul class="footer-links">
+            <li><a href="products.html?category=Ceramics%20%26%20Pottery">Ceramics & Clay</a></li>
+            <li><a href="products.html?category=Candles%20%26%20Fragrance">Soy & Aroma Candles</a></li>
+            <li><a href="products.html?category=Home%20Decor">Macrame Tapestries</a></li>
+            <li><a href="products.html?category=Wooden%20Crafts">Sheesham Wood Crafts</a></li>
+            <li><a href="products.html?category=Handcrafted%20Jewelry">Brass & Silver Jewelry</a></li>
+            <li><a href="products.html?category=Gift%20Hampers">Curated Gift Boxes</a></li>
+          </ul>
+        </div>
+
+        <!-- Customer Care & Demo Disclaimer -->
+        <div class="col-lg-3 col-md-6">
+          <h5>Artisan Studio</h5>
+          <p class="text-muted mb-2"><i class="bi bi-geo-alt me-2 text-primary"></i> 42 Artisan Lane, Kala Ghoda, Mumbai - 400001 (Demo)</p>
+          <p class="text-muted mb-2"><i class="bi bi-telephone me-2 text-primary"></i> +91 98200 12345 (Demo Support)</p>
+          <p class="text-muted mb-3"><i class="bi bi-envelope me-2 text-primary"></i> support@handmadegifts-demo.org</p>
+          
+          <div class="demo-banner-badge p-2 mt-2">
+            <strong>🎓 College ITT Assignment:</strong>
+            <div style="font-size: 0.75rem;">Visual prototype created for student project report demonstration.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <div>
+          &copy; 2026 Handmade Gifts Prototype. Handcrafted for College ITT Assignment.
+        </div>
+        <div class="d-flex gap-3">
+          <a href="login.html" class="text-muted text-decoration-none">Patron Login</a>
+          <a href="register.html" class="text-muted text-decoration-none">Register</a>
+          <a href="contact.html" class="text-muted text-decoration-none">Artisan Guilds</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom Prototype JS -->
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
